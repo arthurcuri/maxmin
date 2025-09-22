@@ -38,6 +38,22 @@ def max_min_select(arr, left, right):
 - Combina os resultados comparando os mínimos entre si e os máximos entre si
 - Reduz significativamente o número de comparações em relação à busca sequencial
 
+### Visualização da Estrutura Hierárquica
+
+O diagrama abaixo ilustra a árvore de recursão do algoritmo MaxMin Select para um array de 8 elementos, mostrando como o problema é dividido em subproblemas menores:
+
+![Árvore de Recursão](assets/arvore_recursao.png)
+
+**Processo de Divisão e Combinação:**
+
+![Divisão e Combinação](assets/divisao_combinacao.png)
+
+Os diagramas mostram claramente:
+1. **Divisão**: Como o problema original é quebrado em subproblemas menores
+2. **Conquista**: Resolução dos casos base (1 ou 2 elementos)
+3. **Combinação**: Como os resultados são unidos para formar a solução final
+4. **Contagem**: Número de comparações em cada nível da recursão
+
 ## Como Executar o Projeto
 
 ### Pré-requisitos
@@ -118,6 +134,12 @@ T(n) = (n/2) × T(2) + 2(n/2 - 1)
 
 **Resultado:** O algoritmo realiza **3n/2 - 2** comparações, resultando em complexidade temporal **O(n)**.
 
+### Análise Visual da Complexidade
+
+![Análise de Complexidade](assets/analise_complexidade.png)
+
+O gráfico à esquerda mostra a comparação entre as diferentes fórmulas, confirmando que **3n/2 - 2** é a fórmula correta para o algoritmo implementado. O gráfico à direita demonstra como as comparações se distribuem pelos níveis da árvore de recursão.
+
 ### 2. Análise da Complexidade Assintótica pela Aplicação do Teorema Mestre
 
 #### Identificação dos Parâmetros
@@ -181,6 +203,12 @@ Pelo Caso 1 do Teorema Mestre:
 | **Busca Sequencial** | O(n) | 2n - 2 | O(1) |
 | **MaxMin Select** | O(n) | 3n/2 - 2 | O(log n) |
 | **Eficiência** | Igual | **25% menos** | Maior |
+
+### Fluxograma do Algoritmo
+
+![Fluxograma](assets/fluxograma_algoritmo.png)
+
+O fluxograma acima detalha o processo de execução do algoritmo, mostrando os casos base, as chamadas recursivas e o processo de combinação dos resultados.
 
 ## Autor
 
