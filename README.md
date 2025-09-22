@@ -1,4 +1,4 @@
-# Projeto - Algoritmo de Seleção Simultânea MaxMin Select
+# Projeto - Algoritmo MaxMin Select
 
 ## Descrição do Projeto
 
@@ -63,8 +63,6 @@ Min: -9
 Max: 9
 ```
 
-## Relatório Técnico
-
 ### 1. Análise da Complexidade Assintótica pelo Método de Contagem de Operações
 
 #### Contagem Detalhada de Comparações
@@ -119,11 +117,6 @@ T(n) = (n/2) × T(2) + 2(n/2 - 1)
 ```
 
 **Resultado:** O algoritmo realiza **3n/2 - 2** comparações, resultando em complexidade temporal **O(n)**.
-
-**Comparação com Abordagem Ingênua:**
-- Busca sequencial: 2n - 2 comparações (n-1 para min + n-1 para max)
-- MaxMin Select: 3n/2 - 2 comparações
-- **Redução de aproximadamente 25% nas comparações**
 
 ### 2. Análise da Complexidade Assintótica pela Aplicação do Teorema Mestre
 
